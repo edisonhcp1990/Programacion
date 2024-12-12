@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main-container>
+        <custom-header slot="header"></custom-header>  
+        <custom-menu slot="menu"></custom-menu>
+
+        <section slot="tabla-empleados">
+            <div id="inicio" style="text-align: center; margin-top: 50px;">
+                <h1>ESPE</h1>
+                <p>ACTIVIDAD 2</p>
+            </div>
+             <!-- La tabla se ocultará al inicio -->
+             <tabla-empleados></tabla-empleados>
+
+               <!-- Perfil Usuario -->
+               <perfil-usuario style="display: block;"></perfil-usuario>
+               <pokemon-galery style="display: none;"></pokemon-galery>
+
+        
+        </section>
+
+
+       <custom-footer slot="footer"></custom-footer>
+    </main-container>
+       
+    <script src="js/main.js"></script>
+    <script src="js/book-list.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/custom-menu.js"></script>
+    <script src="js/tabla-empleados.js"></script>
+    <script src="js/perfil-usuario.js"></script>
+    <script src="js/galery.js"></script>
+</body>
+
+</html>

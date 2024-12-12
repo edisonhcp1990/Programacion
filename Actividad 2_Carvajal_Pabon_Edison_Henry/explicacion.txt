@@ -1,0 +1,35 @@
+1. main.js
+	Actúa como archivo principal para las configuraciones globales o inicialización de eventos.
+2. header.js
+	Define el encabezado (custom-header) que se encuentra en la parte superior de la página, incluye el título del sitio.
+	Utiliza un Shadow DOM para encapsular el contenido y asegurarse de que los estilos no sean afectados por otros elementos de la página.
+3. footer.js
+	Define el pie de página (custom-footer), muestra información como derechos reservados, enlaces o contacto.
+	Similar al encabezado, utiliza el Shadow DOM para mantener estilos y estructura independientes.
+4. custom-menu.js
+	Crea un menú interactivo (custom-menu) que permite al usuario navegar entre secciones dinámicas de la página.
+	Detecta clicks en las opciones del menú y controla qué sección debe mostrarse.
+	Oculta las secciones que no están seleccionadas para mantener una interfaz limpia.
+5. tabla-empleados.js
+	Muestra una tabla de datos (tabla-empleados) obtenidos de una API externa.
+	Diseñado para mostrar información estructurada como filas y columnas.
+	Realiza solicitudes a una API para obtener datos en formato JSON.
+	Renderiza dinámicamente los datos en la tabla.
+	Permite actualizar los datos al activarse un evento.
+6. perfil-usuario.js
+	Crea un componente de perfil interactivo (perfil-usuario) que muestra información personal, como imagen, nombre y biografía.
+	Usa atributos personalizados para mostrar contenido dinámico, como el nombre del usuario o su imagen.
+	Proporciona interactividad mediante un botón que cambia su estado entre "Agregar" y "Eliminar".
+7. galery.js
+	Implementa una galería interactiva (pokemon-galery) que muestra imágenes y nombres obtenidos de la PokeAPI.
+	Solicita una lista de Pokémon a la API.
+	Obtiene detalles individuales de cada Pokémon, como su imagen y nombre.
+	Renderiza los resultados en formato de cuadrícula.
+
+Relación entre Componentes
+	Estructura Base: custom-header y custom-footer son elementos fijos que establecen consistencia visual.
+	Navegación: custom-menu controla qué secciones (tabla, perfil, galería) se muestran según la selección.
+	Contenido Dinámico: tabla-empleados, perfil-usuario y pokemon-galery presentan información obtenida dinámicamente, dependiendo de la interacción del usuario.
+
+
+
